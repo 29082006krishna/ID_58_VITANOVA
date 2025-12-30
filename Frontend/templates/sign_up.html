@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SmartEnergy - Sign Up</title>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13ec49",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#102215",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#0d1b11] dark:text-gray-100 min-h-screen flex flex-col">
+<header class="flex items-center justify-between px-6 py-4 md:px-10 md:py-5 border-b border-gray-200/50 dark:border-gray-800/50">
+<div class="p-6 flex items-center gap-3">
+            <div class="h-10 w-10 rounded-full bg-cover bg-center shadow-sm" data-alt="Abstract green leaf pattern representing eco energy" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDKvN6wVWwVUv-pd4ZMuiDvli3mHjWG-ISB7oI-DV0YGGOT_8Ab1191Yztv3vL-Zw1qcqLtTrJsw69Dc-Ew44v2v-WXJ_mMKX9befxolGM-3lngaxiLpRHlLiNGazZbNHFcHgQuVnJv8Hn54iqcO4_yy3qY49fyrjkn4KW75FsBV_NVYM7Nmd1A96GaHcqPfU-R3NvWNVFwCrejl9Fj4WUquVkKREuc7bZwceKfNdT4cJNt1U1-diOXorkn-6ziUA21rcPSvAZRzAU");'></div>
+                <div>
+                    <h1 class="text-lg font-bold tracking-tight text-text-main dark:text-white">EcoSmart</h1>
+                </div>
+            </div>
+</header>
+<main class="flex-grow flex items-center justify-center p-4 md:p-8 relative overflow-hidden">
+<div class="absolute inset-0 -z-10 opacity-40 dark:opacity-10 pointer-events-none overflow-hidden">
+<div class="absolute -top-[20%] -right-[10%] w-[600px] h-[600px] bg-primary/10 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-[20%] -left-[10%] w-[600px] h-[600px] bg-[#4c9a5f]/10 rounded-full blur-3xl"></div>
+</div>
+<div class="w-full max-w-[520px] bg-white dark:bg-[#15281b] rounded-2xl shadow-xl dark:shadow-none dark:border dark:border-[#2e4c35] p-6 md:p-10 transition-colors duration-200">
+<div class="text-center mb-8">
+<h1 class="text-3xl md:text-4xl font-black leading-tight tracking-[-0.033em] mb-3 text-[#0d1b11] dark:text-white">Join the Revolution</h1>
+<p class="text-[#4c9a5f] text-base font-normal">Create your free account to access smart energy insights.</p>
+</div>
+<form action="{{url_for('dashboard')}}" class="space-y-5">
+<div class="flex flex-col gap-2">
+<label class="text-[#0d1b11] dark:text-gray-200 text-sm font-semibold">Full Name</label>
+<input class="w-full h-12 px-4 rounded-xl border border-[#cfe7d5] dark:border-[#2e4c35] bg-[#f8fcf9] dark:bg-[#0d1b11] text-[#0d1b11] dark:text-white placeholder-[#4c9a5f]/70 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all text-base" placeholder="e.g. John Doe" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-[#0d1b11] dark:text-gray-200 text-sm font-semibold">Email Address</label>
+<input class="w-full h-12 px-4 rounded-xl border border-[#cfe7d5] dark:border-[#2e4c35] bg-[#f8fcf9] dark:bg-[#0d1b11] text-[#0d1b11] dark:text-white placeholder-[#4c9a5f]/70 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all text-base" placeholder="name@company.com" type="email"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-[#0d1b11] dark:text-gray-200 text-sm font-semibold">Company Name <span class="text-xs font-normal text-[#4c9a5f] ml-1">(Optional)</span></label>
+<input class="w-full h-12 px-4 rounded-xl border border-[#cfe7d5] dark:border-[#2e4c35] bg-[#f8fcf9] dark:bg-[#0d1b11] text-[#0d1b11] dark:text-white placeholder-[#4c9a5f]/70 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all text-base" placeholder="Your Company" type="text"/>
+</div>
+<div class="flex flex-col sm:flex-row gap-4">
+<div class="flex flex-col gap-2 flex-1">
+<label class="text-[#0d1b11] dark:text-gray-200 text-sm font-semibold">Password</label>
+<div class="relative">
+<input class="w-full h-12 px-4 pr-10 rounded-xl border border-[#cfe7d5] dark:border-[#2e4c35] bg-[#f8fcf9] dark:bg-[#0d1b11] text-[#0d1b11] dark:text-white placeholder-[#4c9a5f]/70 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all text-base" placeholder="••••••••" type="password"/>
+<button class="absolute right-3 top-1/2 -translate-y-1/2 text-[#4c9a5f] hover:text-primary focus:outline-none" type="button">
+<span class="material-symbols-outlined text-[20px]">visibility_off</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-2 flex-1">
+<label class="text-[#0d1b11] dark:text-gray-200 text-sm font-semibold">Confirm</label>
+<div class="relative">
+<input class="w-full h-12 px-4 pr-10 rounded-xl border border-[#cfe7d5] dark:border-[#2e4c35] bg-[#f8fcf9] dark:bg-[#0d1b11] text-[#0d1b11] dark:text-white placeholder-[#4c9a5f]/70 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all text-base" placeholder="••••••••" type="password"/>
+<button class="absolute right-3 top-1/2 -translate-y-1/2 text-[#4c9a5f] hover:text-primary focus:outline-none" type="button">
+<span class="material-symbols-outlined text-[20px]">visibility_off</span>
+</button>
+</div>
+</div>
+</div>
+<label class="flex items-start gap-3 cursor-pointer group">
+<div class="relative flex items-center">
+<input class="peer h-5 w-5 appearance-none rounded border border-[#cfe7d5] bg-white checked:bg-primary checked:border-primary focus:ring-2 focus:ring-primary/20 transition-all" type="checkbox"/>
+<span class="material-symbols-outlined absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-white opacity-0 peer-checked:opacity-100 text-[16px] font-bold pointer-events-none">check</span>
+</div>
+<span class="text-sm text-[#4c9a5f] group-hover:text-[#0d1b11] dark:group-hover:text-white transition-colors leading-tight select-none">
+                        I agree to the <a class="font-semibold underline decoration-primary/30 hover:decoration-primary" href="#">Terms of Service</a> and <a class="font-semibold underline decoration-primary/30 hover:decoration-primary" href="#">Privacy Policy</a>.
+                    </span>
+</label>
+<button type="submit" class="w-full h-12 bg-primary hover:bg-[#0fd641] active:scale-[0.98] text-[#0d1b11] font-bold rounded-xl shadow-lg shadow-primary/20 transition-all flex items-center justify-center gap-2" type="submit">
+                    Create Account
+                    <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+<div class="text-center">
+<p class="text-sm text-[#4c9a5f]">
+        Already have an account?
+        <a class="font-bold text-[#0d1b11] dark:text-white hover:text-primary transition-colors ml-0.5 hover:underline" href="{{url_for('login_page')}}">Log In</a>
+</p>
+</div>
+</form>
+<div class="relative my-8">
+<div class="absolute inset-0 flex items-center">
+<div class="w-full border-t border-[#e7f3ea] dark:border-[#2e4c35]"></div>
+</div>
+<div class="relative flex justify-center text-sm">
+<span class="bg-white dark:bg-[#15281b] px-3 text-[#4c9a5f]">Or sign up with</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<button class="flex items-center justify-center gap-2 h-11 rounded-xl border border-[#cfe7d5] dark:border-[#2e4c35] bg-[#f8fcf9] dark:bg-[#0d1b11] hover:bg-[#e7f3ea] dark:hover:bg-[#1A3324] transition-colors text-sm font-semibold text-[#0d1b11] dark:text-white">
+<svg class="h-5 w-5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"></path>
+<path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"></path>
+<path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"></path>
+<path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"></path>
+</svg>
+                    Google
+                </button>
+<button class="flex items-center justify-center gap-2 h-11 rounded-xl border border-[#cfe7d5] dark:border-[#2e4c35] bg-[#f8fcf9] dark:bg-[#0d1b11] hover:bg-[#e7f3ea] dark:hover:bg-[#1A3324] transition-colors text-sm font-semibold text-[#0d1b11] dark:text-white">
+<svg class="h-5 w-5" viewBox="0 0 23 23" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0h23v23H0z" fill="#f3f3f3"></path>
+<path d="M1 1h10v10H1z" fill="#f35325"></path>
+<path d="M12 1h10v10H12z" fill="#81bc06"></path>
+<path d="M1 12h10v10H1z" fill="#05a6f0"></path>
+<path d="M12 12h10v10H12z" fill="#ffba08"></path>
+</svg>
+                    Microsoft
+                </button>
+</div>
+<p class="mt-6 text-center text-xs text-[#4c9a5f]">
+<span class="material-symbols-outlined align-middle text-sm mr-1">lock</span>
+                Your data is secure and encrypted.
+            </p>
+</div>
+</main>
+<footer class="py-6 text-center">
+<p class="text-sm text-[#4c9a5f]/80 dark:text-gray-400">
+            Predicting the energy that drives the future
+        </p>
+</footer>
+</body></html>

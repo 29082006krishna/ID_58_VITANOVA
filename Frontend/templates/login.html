@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>EnergyPlanner - Login</title>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13ec49",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#102215",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display min-h-screen flex flex-col items-center justify-center p-4">
+<!-- Main Card Container -->
+<div class="w-full max-w-[480px] bg-white dark:bg-[#1a2e20] rounded-xl shadow-lg dark:shadow-black/20 border border-[#e7f3ea] dark:border-[#2a4030] overflow-hidden">
+<!-- Header / Logo Area -->
+<div class="flex flex-col items-center pt-10 pb-2 px-8">
+<!-- Logo SVG reused from TopNavBar component -->
+            <div class="h-10 w-10 rounded-full bg-cover bg-center shadow-sm" data-alt="Abstract green leaf pattern representing eco energy" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDKvN6wVWwVUv-pd4ZMuiDvli3mHjWG-ISB7oI-DV0YGGOT_8Ab1191Yztv3vL-Zw1qcqLtTrJsw69Dc-Ew44v2v-WXJ_mMKX9befxolGM-3lngaxiLpRHlLiNGazZbNHFcHgQuVnJv8Hn54iqcO4_yy3qY49fyrjkn4KW75FsBV_NVYM7Nmd1A96GaHcqPfU-R3NvWNVFwCrejl9Fj4WUquVkKREuc7bZwceKfNdT4cJNt1U1-diOXorkn-6ziUA21rcPSvAZRzAU");'></div>               
+                <div>
+                    <h1 class="text-lg font-bold tracking-tight text-text-main dark:text-white">EcoSmart</h1>
+                </div>
+<h2 class="text-[#0d1b11] dark:text-white tracking-tight text-[28px] font-bold leading-tight px-4 text-center">Log in to your account</h2>
+<p class="text-[#4c9a5f] dark:text-[#8abe98] text-base font-normal leading-normal pt-2 px-4 text-center">Manage your renewable energy sources efficiently.</p>
+</div>
+<!-- Form Section -->
+<div class="p-8 pt-4">
+<form action="{{url_for('dashboard')}}" class="flex flex-col gap-5">
+<!-- Email Field -->
+<div class="flex flex-col gap-2">
+<label class="text-[#0d1b11] dark:text-gray-200 text-base font-medium leading-normal">Email address</label>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#0d1b11] dark:text-white dark:placeholder:text-[#6c8574] focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-[#cfe7d5] dark:border-[#2a4030] bg-[#f8fcf9] dark:bg-[#15291b] focus:border-primary h-14 placeholder:text-[#4c9a5f] p-[15px] text-base font-normal leading-normal transition-colors duration-200" placeholder="name@example.com" type="email" value=""/>
+</div>
+<!-- Password Field -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<label class="text-[#0d1b11] dark:text-gray-200 text-base font-medium leading-normal">Password</label>
+<a class="text-sm font-medium text-[#4c9a5f] dark:text-primary hover:text-primary dark:hover:text-[#4c9a5f] transition-colors" href="#">Forgot Password?</a>
+</div>
+<!-- Using the component structure for input with icon -->
+<div class="flex w-full flex-1 items-stretch rounded-xl">
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl rounded-r-none border-r-0 text-[#0d1b11] dark:text-white dark:placeholder:text-[#6c8574] focus:outline-0 focus:ring-0 border border-[#cfe7d5] dark:border-[#2a4030] bg-[#f8fcf9] dark:bg-[#15291b] focus:border-primary h-14 placeholder:text-[#4c9a5f] p-[15px] text-base font-normal leading-normal transition-colors duration-200" placeholder="••••••••" type="password" value=""/>
+<div class="text-[#4c9a5f] dark:text-[#8abe98] hover:text-[#0d1b11] dark:hover:text-white cursor-pointer flex border border-[#cfe7d5] dark:border-[#2a4030] bg-[#f8fcf9] dark:bg-[#15291b] items-center justify-center pr-[15px] rounded-r-xl border-l-0 transition-colors duration-200">
+<span class="material-symbols-outlined text-[24px]">visibility</span>
+</div>
+</div>
+</div>
+<!-- Actions -->
+<div class="pt-2 flex flex-col gap-4">
+<button type="submit" 
+    class="w-full h-14 bg-primary hover:bg-[#0fd641] active:bg-[#0bc23a] text-[#0d1b11] font-bold rounded-xl text-base transition-colors duration-200 shadow-sm flex items-center justify-center">
+    Log In
+</button>
+<p class="text-center text-[#0d1b11] dark:text-gray-300 text-base">
+                        New here? 
+                        <a class="font-bold text-[#0d1b11] dark:text-white hover:text-primary dark:hover:text-primary transition-colors hover:underline" href="{{url_for('sign_up')}}">Create an account</a>
+</p>
+</div>
+</form>
+</div>
+</div>
+<!-- Simple Footer for Context -->
+<div class="mt-8 text-center">
+<p class="text-sm text-[#4c9a5f] dark:text-[#6c8574]">            Predicting the energy that drives the future
+</p>
+</div>
+</body></html>

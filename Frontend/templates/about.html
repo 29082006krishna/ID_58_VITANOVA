@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmartEnergySys – About Us</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: "Inter", sans-serif;
+            margin: 0;
+            background: #f6f9fc;
+            color: #222;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 18px 50px;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav .logo {
+            font-size: 22px;
+            font-weight: 700;
+            color: #0abf3b;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #333;
+            margin-right: 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .hero {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .hero h1 {
+            font-size: 38px;
+            font-weight: 700;
+            color: #0abf3b;
+        }
+
+        .hero p {
+            max-width: 780px;
+            margin: 20px auto;
+            font-size: 17px;
+            line-height: 1.7;
+            color: #333;
+        }
+
+        .section-title {
+            font-size: 28px;
+            font-weight: 700;
+            margin-top: 60px;
+            text-align: center;
+            color: #111;
+        }
+
+        .content-section {
+            margin-top: 20px;
+            background: white;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        .content-section p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+
+        .card h3 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #111;
+        }
+
+        .card p {
+            font-size: 15px;
+            color: #444;
+        }
+
+        footer {
+            margin-top: 70px;
+            background: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <div class="nav">
+        <div class="logo">EcoSmart</div>
+        <div>
+            <a class="text-sm font-medium text-text-muted hover:text-primary transition-colors dark:text-gray-300 dark:hover:text-primary" href="{{ url_for('index') }}">Home</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="container hero">
+        <h1>About SmartEnergySys</h1>
+        <p>
+            SmartEnergySys is a modern digital platform designed to unify, monitor, 
+            and optimize renewable energy systems. Our mission is to simplify energy 
+            management through intelligent software that adapts to real-world needs 
+            and drives sustainable outcomes.
+        </p>
+    </div>
+
+    <!-- Our Vision -->
+    <div class="container">
+        <h2 class="section-title">Our Vision</h2>
+        <div class="content-section">
+            <p>
+                We envision a future where clean, renewable energy is managed 
+                effortlessly through smart, automated systems. Our goal is to empower 
+                individuals, organizations, and industries with tools that promote 
+                efficiency, reduce waste, and ensure reliable access to sustainable 
+                power sources.
+            </p>
+        </div>
+    </div>
+
+    <!-- Our Mission -->
+    <div class="container">
+        <h2 class="section-title">Our Mission</h2>
+        <div class="content-section">
+            <p>
+                Our mission is to deliver a robust, user-friendly platform that bridges 
+                the gap between energy hardware and real-time decision-making. We strive 
+                to create solutions that support transparency, innovation, and long-term 
+                energy security.
+            </p>
+        </div>
+    </div>
+
+  
+
+    <!-- Footer -->
+    <footer>
+     Predicting the energy that drives the future
+    </footer>
+
+</body>
+</html>
