@@ -1,10 +1,13 @@
 # ID_58_VITANOVA
-Multi-Source Renewable Energy Prediction Under Climate Variability
-🌱 Smart Energy Prediction System - EcoSmart
+# 03
+# Technology for Social Good & Sustainable Progress
+# Multi-Source Renewable Energy Prediction Under Climate Variability
+
+# 🌱 Smart Energy Prediction System - EcoSmart
 
 A web-based platform for forecasting energy consumption using machine-learning models and presenting insights through an intuitive, responsive interface.
 
-📌 Features
+# 📌 Features
 
 Energy Consumption Forecasting using ML models
 
@@ -16,7 +19,7 @@ Fully Responsive Layout
 
 Modular File Structure for scalability          
 
-🚀 Getting Started
+# 🚀 Getting Started
 1. Clone the Repository
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
@@ -35,27 +38,15 @@ If using a dev server:
 
 npm run dev
 
-📈 Prediction Model
+# 🔧 Tech Stack
 
-Regression-based machine-learning model
+| Layer           | Technology                   |
+| --------------- | -----------------------------|
+| Frontend        | HTML, CSS, BootStrap, react  |
+| Backend         | Python , Flask               |
+| DataBase        | MySQL, SQLAlchemy            |
 
-Trained on historical energy usage patterns
-
-Returns predicted energy consumption values
-
-Integrated via API or script modules
-
-📤 Deployment
-
-Supports deployment on:
-
-GitHub Pages
-
-Vercel / Netlify
-
-Render / Railway (for backend support)
-
-🤝 Contributing
+# 🤝 Contribution
 
 Fork the repository
 
@@ -65,10 +56,10 @@ Commit your updates
 
 Submit a pull request
 
-🧑‍💻 Authors
+# 🧑‍💻 Team Member Information 
 
-kanksha Buch
-
-Krishna Bhatt
-
-Rachita Devda
+| Enrollment no.   | Name           |
+| -----------------| -------------- |
+| 23BECE30029      | Kanksha Buch   |
+| 23BECE30059      | Rachita Devda  |
+| 23BECE30023      | Krishna Bhatt  |
