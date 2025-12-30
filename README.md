@@ -44,7 +44,7 @@ npm run dev
 | --------------- | -----------------------------|
 | Frontend        | HTML, CSS, BootStrap, react  |
 | Backend         | Python , Flask               |
-| DataBase        | MySQL, SQLAlchemy            |
+| Database        | MySQL, SQLAlchemy            |
 
 # 🤝 Contribution
 
